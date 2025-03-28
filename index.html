@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <!-- ligação do css com o html -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- bloco central para o conversor -->
+        <h2>Conversor de Moedas</h2>
+
+        <!-- campo para o usuário colocar o valor que ele gostaria de converter -->
+        <input type="number" id="amount" placeholder="Digite um valor" value="" min="0">
+        <!--input usado para entrada de dados-->
+        <!--type="number" que so permite numeros-->
+        <!--id="amount" para pegar o valor do input no js-->
+        <!--placeholder="Digite um valor" para mostrar o que o usuário deve fazer-->
+        <!--value="" para deixar o campo vazio quando o usuário abrir a página-->
+
+        <!-- moeda de origgem -->
+        <select id="Origem">
+            <option value="USD">Dólar (USD)</option>
+            <option value="BRL">Real (BRL)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Libra Esterlina (GBP)</option>
+            <option value="JPY">Iene Japonês (JPY)</option>
+            <option value="CAD">Dólar Canadense (CAD)</option>
+            <option value="AUD">Dólar Australiano (AUD)</option>
+            <option value="CHF">Franco Suíço (CHF)</option>
+            <option value="CNY">Yuan Chinês (CNY)</option>
+
+        </select>
+
+        <!-- simbolo de estética para mostrar a conversão -->
+        <span>➡</span>
+
+        <!-- moeda de destino -->
+        <!-- o valor padrão é o real, mas o usuário pode escolher a moeda que ele quer -->
+        <select id="Destino">
+            <option value="BRL">Real (BRL)</option>
+            <option value="USD">Dólar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Libra Esterlina (GBP)</option>
+            <option value="JPY">Iene Japonês (JPY)</option>
+            <option value="CAD">Dólar Canadense (CAD)</option>
+            <option value="AUD">Dólar Australiano (AUD)</option>
+            <option value="CHF">Franco Suíço (CHF)</option>
+            <option value="CNY">Yuan Chinês (CNY)</option>
+        </select>
+
+        <!-- botão para fazer a conversão -->
+        <!-- quando o usuário clicar no botão, a função convertMoeda() é chamada -->
+        <button onclick="convertMoeda()">Converter</button>
+
+        <!-- caixa de resultado para mostrar o valor convertido -->
+        <!-- o valor padrão é - (menos) para mostrar que não há valor convertido ainda -->
+        <div class="result-box">
+            <h3 id="result">Resultado: -</h3>
+        </div>
+    </div>
+
+    <!-- ligação do js com o html -->
+    <!-- o script.js contém a função convertMoeda() que faz a conversão de moedas -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Configura o fundo e centraliza a página */
+body {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Configura o container que é o bloco principal do conversor  */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+}
+
+/* Configura o título e subtítulo */
+h2 {
+    margin-bottom: 15px;
+    color:violet;
+}
+
+/* estiliza os botons e a entrada de valores */
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    border: 1px solid #929292;
+    border-radius: 5px;
+}
+
+/* estiliza o botão de conversão */
+button {
+    background: #000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+/* estiliza o botão de conversão quando o mouse passa por cima */
+button:hover{
+    background: #bc04c0;
+}
+
+/* estiliza o resultado*/
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
